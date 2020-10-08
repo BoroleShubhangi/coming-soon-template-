@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="overlay" id="right">
+        <h1>Glacier</h1>
+        <div class="countdown-container">
+            <div class="box days-c">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+            <div class="box hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="box min-c">
+                <p class="big-text" id="min">0</p>
+                <span>Minutes</span>
+            </div>
+            <div class="box seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="masthead" id="left">
+        <div class="masthead-bg"></div>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 my-auto" >
+                    <div class="masthead-content text-white py-5 py-md-0">
+                         <h1 class="mb-3 " >just a little more...!</h1>
+                        <p>
+                        Subscribe to get notification as soon as we launch
+                        </p>
+                        <div class="input-group input-group-newsletter" data-aos="flip-down" delay=500>
+                            <input type="email" class="form-control" placeholder="Enter email..."
+                                aria-label="Enter email..." aria-describedby="submit-button">
+                            <div class="input-group-append" >
+                                <button type="button" id="submit-button">Notify Me!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"> <i class="fab fa-facebook"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                    <a href="#"> <i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right-icons">
+        <ul class="list-unstyled text-center mb-0">
+          <li class="list-unstyled-item">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          
+          <li class="list-unstyled-item">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-unstyled-item">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+ </body>
+
+</html>

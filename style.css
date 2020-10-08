@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  min-height: 35rem;
+  position: relative;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+h1 {
+  font-family: Merriweather;
+  font-weight: 500;
+  color: rgb(248, 241, 231);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: antiquewhite;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.overlay h1 {
+  color: #123;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 13%;
+  padding: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-family: "Berkshire Swash", cursive;
+}
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+}
+.masthead .masthead-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background: #123;
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+.masthead .masthead-content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.masthead .masthead-content p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.masthead .masthead-content .input-group-newsletter input {
+  height: 42px;
+  width: auto;
+  font-size: 1rem;
+  padding: 1rem;
+  background: rgb(248, 241, 231);
+  margin-top: 40px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.masthead .masthead-content .input-group-newsletter button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-left: 5px;
+  margin-top: 40px;
+  border: none;
+  color: #fff;
+  background-color: #495055;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.masthead .masthead-content .input-group-newsletter input:focus {
+  border-color: #495055;
+}
+
+.masthead .masthead-content .input-group-newsletter button:hover {
+  background-color: #4d4d4d;
+}
+@media (min-width: 100px) {
+  .masthead {
+    height: 100%;
+    min-height: 0;
+    width: 40.5rem;
+    padding-bottom: 0;
+  }
+  .masthead .masthead-bg {
+    min-height: 0;
+    transform: skewY(12deg);
+  }
+  .masthead .masthead-content {
+    padding-left: 3rem;
+    padding-right: 10rem;
+  }
+  .masthead .masthead-content h1 {
+    font-size: 3rem;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+  }
+  .masthead .masthead-content p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+.social-icons {
+  position: relative;
+  width: auto;
+  margin-left: 25%;
+}
+
+.social-icons i {
+  text-align: center;
+  font-size: 1.2rem;
+  color: antiquewhite;
+  margin-left: 15px;
+  height: 25px;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 25px;
+}
+
+.right-icons {
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.9;
+}
+.right-icons ul {
+  width: 100%;
+  text-align: center;
+}
+.right-icons ul > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+.right-icons ul > li > a {
+  display: block;
+  color: #fff;
+  background-color: #123;
+  border-radius: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+@media (min-width: 768px) {
+  .right-icons {
+    margin: 0;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+    width: auto;
+  }
+  .right-icons ul {
+    margin-top: 0;
+    width: auto;
+  }
+  .right-icons ul > li {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.7rem;
+  }
+
+  .right-icons ul > li > a {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  .right-icons ul > li > a:hover {
+    background-color: rgb(30, 38, 48);
+  }
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 20%; */
+  margin-left: 46%;
+}
+
+.big-text {
+  font-size: 3.5rem;
+  margin: 1rem 2rem;
+  /* color: #dd2c5c; */
+  color: #fff;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+span {
+  color: #fff;
+  font-size: 1rem;
+  /* color: #648086; */
+  text-align: center;
+}
+
+.box {
+  float: left;
+  width: 130px;
+  margin-left: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 25px 0 25px 0;
+  background: #123;
+  /* background: #35383a; */
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+
+footer span {
+  margin-top: 30px;
+  font-size: 0.5rem;
+}
