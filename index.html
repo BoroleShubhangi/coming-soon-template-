@@ -9,23 +9,34 @@
     <!-- bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<!--social icons -->
+    <!--social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-        <!-- jquery -->
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    
+
+    <!-- gsap links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous"></script>
+
     <script src="main.js" defer></script>
 
 </head>
 
 <body>
     <div class="overlay" id="right">
-        <h1>Glacier</h1>
-        <div class="countdown-container">
+        <div class="splittext">
+        <h1 id="rotate">Glacier</h1>
+        </div>
+        <div class="countdown-container" id=to-element>
             <div class="box days-c">
                 <p class="big-text" id="days">0</p>
                 <span>Days</span>
@@ -50,19 +61,28 @@
         <div class="masthead-bg"></div>
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 my-auto" >
+                <div class="col-12 my-auto">
                     <div class="masthead-content text-white py-5 py-md-0">
-                         <h1 class="mb-3 " >just a little more...!</h1>
-                        <p>
-                        Subscribe to get notification as soon as we launch
+                        <h1 class="mb-3 head">just a little more...!</h1>
+                        <p id="para">
+                            Subscribe to get notification as soon as we launch
                         </p>
-                        <div class="input-group input-group-newsletter" data-aos="flip-down" delay=500>
-                            <input type="email" class="form-control" placeholder="Enter email..."
-                                aria-label="Enter email..." aria-describedby="submit-button">
-                            <div class="input-group-append" >
-                                <button type="button" id="submit-button">Notify Me!</button>
-                            </div>
-                        </div>
+
+                        <form class="notify">
+
+                            <label for="notify-email" class="notify__label" aria-label="hidden">email</label>
+
+                            <input id="notify-email" class="notify__input" type="email" placeholder="email">
+
+                            <button type="button" class="notify__button notify__send-button"
+                                id="send-button">Send</button>
+
+                            <button type="button" class="notify__button notify__outer-button" id="outer-button">Notify
+                                Me</button>
+
+                            <p id="thankyou-label" class="notify__thank-you-label">Thank You!!!</p>
+
+                        </form>
                     </div>
                 </div>
                 <div class="social-icons">
@@ -79,24 +99,24 @@
 
     <div class="right-icons">
         <ul class="list-unstyled text-center mb-0">
-          <li class="list-unstyled-item">
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          
-          <li class="list-unstyled-item">
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-unstyled-item">
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
+            <li class="list-unstyled-item">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li class="list-unstyled-item">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
         </ul>
-      </div>
- </body>
+    </div>
+</body>
 
 </html>
